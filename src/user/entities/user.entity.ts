@@ -29,11 +29,11 @@ export class User {
   password: string;
 
   @Column({
-    name: 'nick_name',
+    name: 'nickname',
     length: 50,
     comment: '昵称',
   })
-  nickName: string;
+  nickname: string;
 
   @Column({
     comment: '邮箱',
