@@ -275,7 +275,7 @@ export class UserController {
     vo.username = user.username;
     vo.headPic = user.headPic;
     vo.phoneNumber = user.phoneNumber;
-    vo.nickName = user.nickname;
+    vo.nickname = user.nickname;
     vo.createTime = user.createTime;
     vo.isFrozen = user.isFrozen;
 
@@ -391,7 +391,7 @@ export class UserController {
     type: Number,
   })
   @ApiQuery({
-    name: 'nickName',
+    name: 'nickname',
     description: '昵称',
     type: Number,
   })
@@ -416,12 +416,12 @@ export class UserController {
     )
     pageSize: number,
     @Query('username') username: string,
-    @Query('nickName') nickName: string,
+    @Query('nickname') nickname: string,
     @Query('email') email: string,
   ) {
     return await this.userService.findUsers(
       username,
-      nickName,
+      nickname,
       email,
       pageNo,
       pageSize,

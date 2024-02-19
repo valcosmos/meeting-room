@@ -130,7 +130,7 @@ export class UserService {
     vo.userInfo = {
       id: user.id,
       username: user.username,
-      nickName: user.nickname,
+      nickname: user.nickname,
       email: user.email,
       phoneNumber: user.phoneNumber,
       headPic: user.headPic,
@@ -231,8 +231,8 @@ export class UserService {
       id: userId,
     });
 
-    if (updateUserDto.nickName) {
-      foundUser.nickname = updateUserDto.nickName;
+    if (updateUserDto.nickname) {
+      foundUser.nickname = updateUserDto.nickname;
     }
     if (updateUserDto.headPic) {
       foundUser.headPic = updateUserDto.headPic;
@@ -282,7 +282,7 @@ export class UserService {
 
   async findUsers(
     username: string,
-    nickName: string,
+    nickname: string,
     email: string,
     pageNo: number,
     pageSize: number,
@@ -294,8 +294,8 @@ export class UserService {
     if (username) {
       condition.username = Like(`%${username}%`);
     }
-    if (nickName) {
-      condition.nickName = Like(`%${nickName}%`);
+    if (nickname) {
+      condition.nickname = Like(`%${nickname}%`);
     }
     if (email) {
       condition.email = Like(`%${email}%`);

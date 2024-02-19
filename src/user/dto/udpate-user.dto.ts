@@ -5,7 +5,7 @@ export class UpdateUserDto {
   headPic: string;
 
   @ApiProperty()
-  nickName: string;
+  nickname: string;
 
   @IsNotEmpty({
     message: '邮箱不能为空',

@@ -8,7 +8,7 @@ class UserInfo {
   username: string;
 
   @ApiProperty({ example: '张三' })
-  nickName: string;
+  nickname: string;
 
   @ApiProperty({ example: 'xx@xx.com' })
   email: string;
