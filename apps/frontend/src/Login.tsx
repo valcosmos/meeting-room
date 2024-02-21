@@ -1,13 +1,12 @@
 import { Button, Form, Input, message } from 'antd'
-import { login } from './interface'
-
+import { login } from './interfaces'
+import { Link, useNavigate } from 'react-router-dom'
+import { useCallback } from 'react'
 
 interface LoginUser {
   username: string
   password: string
 }
-
-
 
 const layout1 = {
   labelCol: { span: 4 },
@@ -19,23 +18,28 @@ const layout2 = {
   wrapperCol: { span: 24 }
 }
 
-export function Login () {
+export function Login() {
   const [messageApi, contextHolder] = message.useMessage()
-  const onFinish = async (values: LoginUser) => {
+  const navigate = useNavigate()
+
+  const onFinish = useCallback(async (values: LoginUser) => {
     const res = await login(values.username, values.password)
 
     const { code, message: msg, data } = res.data
-
     if (res.status === 201 || res.status === 200) {
-      messageApi.success('登录成功')
+      message.success('登录成功')
+
       localStorage.setItem('access_token', data.accessToken)
       localStorage.setItem('refresh_token', data.refreshToken)
       localStorage.setItem('user_info', JSON.stringify(data.userInfo))
-      console.log(res.data)
+
+      setTimeout(() => {
+        navigate('/')
+      }, 1000)
     } else {
-      messageApi.error(res.data.data || '系统繁忙，请稍后再试')
+      message.error(data || '系统繁忙，请稍后再试')
     }
-  }
+  }, [])
 
   return (
     <>
@@ -62,8 +66,8 @@ export function Login () {
 
           <Form.Item {...layout2}>
             <div className="flex justify-between">
-              <a href="">创建账号</a>
-              <a href="">忘记密码</a>
+              <Link to="/register">创建账号</Link>
+              <Link to="/update_password">忘记密码</Link>
             </div>
           </Form.Item>
 
