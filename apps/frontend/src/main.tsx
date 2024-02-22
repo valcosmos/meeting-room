@@ -6,15 +6,27 @@ import { ErrorPage } from './ErrorPage.tsx'
 import { Login } from './Login.tsx'
 import { Register } from './Register.tsx'
 import { UpdatePassword } from './UpdatePassword.tsx'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouteObject, RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { StyleProvider } from '@ant-design/cssinjs'
+import { Index } from './index/index.tsx'
+import { UpdateInfo } from './UpdateInfo.tsx'
 
 
-const routes = [
+const routes: RouteObject[] = [
   {
     path: '/',
-    element: <div>index</div>,
-    errorElement: <ErrorPage />
+    element: <Index />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: 'update_info',
+        element:<UpdateInfo/>
+      },
+      {
+        path: 'bb',
+        element:<div>bb</div>
+      },
+    ]
   },
   {
     path: 'login',

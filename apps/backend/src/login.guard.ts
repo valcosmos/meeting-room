@@ -14,6 +14,7 @@ import { Request } from 'express';
 interface JwtUserData {
   userId: number;
   username: string;
+  email: string;
   roles: string[];
   permissions: Permission[];
 }
@@ -59,6 +60,7 @@ export class LoginGuard implements CanActivate {
       request.user = {
         userId: data.userId,
         username: data.username,
+        email: data.email,
         roles: data.roles,
         permissions: data.permissions,
       };
