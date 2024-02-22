@@ -1,5 +1,5 @@
 import { Button, Form, Input, message } from 'antd'
-import { login } from './interfaces'
+import { login } from '../../interfaces'
 import { Link, useNavigate } from 'react-router-dom'
 import { useCallback } from 'react'
 

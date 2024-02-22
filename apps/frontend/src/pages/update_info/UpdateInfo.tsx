@@ -2,8 +2,8 @@ import { Button, Form, Input, message } from 'antd'
 import { useForm } from 'antd/es/form/Form'
 import { useCallback, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { getUserInfo, updateInfo, updateUserInfoCaptcha } from './interfaces'
-import { HeadPicUpload } from './pages/update_info/HeadPicUpload'
+import { getUserInfo, updateInfo, updateUserInfoCaptcha } from '../../interfaces'
+import { HeadPicUpload } from './HeadPicUpload'
 
 export interface UserInfo {
   headPic: string

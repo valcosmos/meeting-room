@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig } from 'axios'
-import { RegisterUser } from './Register'
-import { UpdatePassword } from './UpdatePassword'
-import { UserInfo } from './UpdateInfo'
+import { RegisterUser } from './pages/Register/Register'
+import { UpdatePassword } from './pages/UpdatePassword/UpdatePassword'
+import { UserInfo } from './pages/update_info/UpdateInfo'
 
 import { message } from 'antd'
 

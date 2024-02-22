@@ -1,5 +1,5 @@
 import { Button, Form, Input, message } from 'antd'
-import {  register, registerCaptcha } from './interfaces'
+import {  register, registerCaptcha } from '../../interfaces'
 import { useForm } from 'antd/es/form/Form'
 import { useCallback } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
@@ -58,7 +58,7 @@ export function Register() {
   }, [])
 
   return (
-    <div className="w-96 mx-auto mt-28 space-y-10">
+    <div className="mx-auto space-y-10 w-96 mt-28">
       <h1 className="text-3xl text-center">会议室预订系统</h1>
       <Form form={form} {...layout1} onFinish={onFinish} colon={false} autoComplete="off">
         <Form.Item
