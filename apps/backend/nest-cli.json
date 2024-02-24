@@ -6,6 +6,8 @@
     "spec": false
   },
   "compilerOptions": {
+    "builder": "swc",
+    "typeCheck": true,
     "deleteOutDir": true,
     "watchAssets": true,
     "assets": ["**/*.env"]

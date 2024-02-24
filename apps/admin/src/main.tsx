@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 // import App from './App.tsx'
 import './index.css'
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { StyleProvider } from '@ant-design/cssinjs'
 
 import { Index } from './pages/Index/Index'
@@ -34,7 +34,6 @@ const routes = [
     element: <Login />
   }
 ]
-
 
 const router = createBrowserRouter(routes)
 
