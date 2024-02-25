@@ -10,6 +10,9 @@ import { ErrorPage } from './pages/ErrorPage/ErrorPage'
 import { UserManage } from './pages/UserManage/UserManage'
 import { Login } from './pages/Login/Login'
 import { Menu } from './pages/Menu/Menu'
+import { ModifyMenu } from './pages/ModifyMenu/ModifyMenu'
+import { InfoModify } from './pages/InfoModify/InfoModify'
+import { PasswordModify } from './pages/PasswordModify/PasswordModify'
 
 const routes = [
   {
@@ -26,6 +29,20 @@ const routes = [
             element: <UserManage />
           }
         ]
+      },
+      {
+        path: '/user',
+        element: <ModifyMenu />,
+        children: [
+          {
+            path: 'info_modify',
+            element: <InfoModify />
+          },
+          {
+            path: 'password_modify',
+            element: <PasswordModify />
+          }
+        ]
       }
     ]
   },
@@ -35,7 +52,7 @@ const routes = [
   }
 ]
 
-const router = createBrowserRouter(routes)
+export const router = createBrowserRouter(routes)
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
