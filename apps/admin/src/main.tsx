@@ -13,6 +13,9 @@ import { Menu } from './pages/Menu/Menu'
 import { ModifyMenu } from './pages/ModifyMenu/ModifyMenu'
 import { InfoModify } from './pages/InfoModify/InfoModify'
 import { PasswordModify } from './pages/PasswordModify/PasswordModify'
+import { MeetingRoomManage } from './pages/MeetingRoomManage/MeetingRoomManage'
+import { BookingManage } from './pages/BookingManage/BookingManage'
+import { Statistics } from './pages/Statistics/Statistics'
 
 const routes = [
   {
@@ -46,6 +49,27 @@ const routes = [
       }
     ]
   },
+  {
+    path: '/',
+    element: <MeetingRoomManage />
+  },
+  {
+    path: 'user_manage',
+    element: <UserManage />
+  },
+  {
+    path: 'meeting_room_manage',
+    element: <MeetingRoomManage />
+  },
+  {
+    path: 'booking_manage',
+    element: <BookingManage />
+  },
+  {
+    path: 'statistics',
+    element: <Statistics />
+  },
+
   {
     path: 'login',
     element: <Login />
