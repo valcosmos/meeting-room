@@ -18,8 +18,8 @@ importers:
         specifier: ^1.18.4
         version: 1.18.4(react-dom@18.2.0)(react@18.2.0)
       '@ant-design/icons':
-        specifier: ^5.3.0
-        version: 5.3.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^5.3.1
+        version: 5.3.1(react-dom@18.2.0)(react@18.2.0)
       antd:
         specifier: ^5.14.2
         version: 5.14.2(react-dom@18.2.0)(react@18.2.0)
@@ -33,12 +33,12 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
       react-router-dom:
-        specifier: ^6.22.1
-        version: 6.22.1(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^6.22.2
+        version: 6.22.2(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@types/react':
-        specifier: ^18.2.60
-        version: 18.2.60
+        specifier: ^18.2.61
+        version: 18.2.61
       '@types/react-dom':
         specifier: ^18.2.19
         version: 18.2.19
@@ -206,8 +206,8 @@ importers:
         specifier: ^1.18.4
         version: 1.18.4(react-dom@18.2.0)(react@18.2.0)
       '@ant-design/icons':
-        specifier: ^5.3.0
-        version: 5.3.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^5.3.1
+        version: 5.3.1(react-dom@18.2.0)(react@18.2.0)
       antd:
         specifier: ^5.14.2
         version: 5.14.2(react-dom@18.2.0)(react@18.2.0)
@@ -221,12 +221,12 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
       react-router-dom:
-        specifier: ^6.22.1
-        version: 6.22.1(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^6.22.2
+        version: 6.22.2(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@types/react':
-        specifier: ^18.2.60
-        version: 18.2.60
+        specifier: ^18.2.61
+        version: 18.2.61
       '@types/react-dom':
         specifier: ^18.2.19
         version: 18.2.19
@@ -357,8 +357,8 @@ packages:
     resolution: {integrity: sha512-vHbT+zJEVzllwP+CM+ul7reTEfBR0vgxFe7+lREAsAA7YGsYpboiq2sQNeQeRvh09GfQgs/GyFEvZpJ9cLXpXA==}
     dev: false
 
-  /@ant-design/icons@5.3.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-69FgBsIkeCjw72ZU3fJpqjhmLCPrzKGEllbrAZK7MUdt1BrKsyG6A8YDCBPKea27UQ0tRXi33PcjR4tp/tEXMg==}
+  /@ant-design/icons@5.3.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-85zROTJCCApQn0Ee6L9561+Vd7yVKtSWNm2TpmOsYMrumchbzaRK83x1WWHv2VG+Y1ZAaKkDwcnnSPS/eSwNHA==}
     engines: {node: '>=8'}
     peerDependencies:
       react: '>=16.0.0'
@@ -1744,8 +1744,8 @@ packages:
       '@redis/client': 1.5.14
     dev: false
 
-  /@remix-run/router@1.15.1:
-    resolution: {integrity: sha512-zcU0gM3z+3iqj8UX45AmWY810l3oUmXM7uH4dt5xtzvMhRtYVhKGOmgOd1877dOPPepfCjUv57w+syamWIYe7w==}
+  /@remix-run/router@1.15.2:
+    resolution: {integrity: sha512-+Rnav+CaoTE5QJc4Jcwh5toUpnVLKYbpU6Ys0zqbakqbaLQHeglLVHPfxOiQqdNmUy5C2lXz5dwC6tQNX2JW2Q==}
     engines: {node: '>=14.0.0'}
     dev: false
 
@@ -2211,11 +2211,11 @@ packages:
   /@types/react-dom@18.2.19:
     resolution: {integrity: sha512-aZvQL6uUbIJpjZk4U8JZGbau9KDeAwMfmhyWorxgBkqDIEf6ROjRozcmPIicqsUwPUjbkDfHKgGee1Lq65APcA==}
     dependencies:
-      '@types/react': 18.2.60
+      '@types/react': 18.2.61
     dev: true
 
-  /@types/react@18.2.60:
-    resolution: {integrity: sha512-dfiPj9+k20jJrLGOu9Nf6eqxm2EyJRrq2NvwOFsfbb7sFExZ9WELPs67UImHj3Ayxg8ruTtKtNnbjaF8olPq0A==}
+  /@types/react@18.2.61:
+    resolution: {integrity: sha512-NURTN0qNnJa7O/k4XUkEW2yfygA+NxS0V5h1+kp9jPwhzZy95q3ADoGMP0+JypMhrZBTTgjKAUlTctde1zzeQA==}
     dependencies:
       '@types/prop-types': 15.7.10
       '@types/scheduler': 0.16.6
@@ -2661,7 +2661,7 @@ packages:
     dependencies:
       '@ant-design/colors': 7.0.2
       '@ant-design/cssinjs': 1.18.4(react-dom@18.2.0)(react@18.2.0)
-      '@ant-design/icons': 5.3.0(react-dom@18.2.0)(react@18.2.0)
+      '@ant-design/icons': 5.3.1(react-dom@18.2.0)(react@18.2.0)
       '@ant-design/react-slick': 1.0.2(react@18.2.0)
       '@ctrl/tinycolor': 3.6.1
       '@rc-component/color-picker': 1.5.2(react-dom@18.2.0)(react@18.2.0)
@@ -6634,26 +6634,26 @@ packages:
   /react-is@18.2.0:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
 
-  /react-router-dom@6.22.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-iwMyyyrbL7zkKY7MRjOVRy+TMnS/OPusaFVxM2P11x9dzSzGmLsebkCvYirGq0DWB9K9hOspHYYtDz33gE5Duw==}
+  /react-router-dom@6.22.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-WgqxD2qySEIBPZ3w0sHH+PUAiamDeszls9tzqMPBDA1YYVucTBXLU7+gtRfcSnhe92A3glPnvSxK2dhNoAVOIQ==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
       react-dom: '>=16.8'
     dependencies:
-      '@remix-run/router': 1.15.1
+      '@remix-run/router': 1.15.2
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      react-router: 6.22.1(react@18.2.0)
+      react-router: 6.22.2(react@18.2.0)
     dev: false
 
-  /react-router@6.22.1(react@18.2.0):
-    resolution: {integrity: sha512-0pdoRGwLtemnJqn1K0XHUbnKiX0S4X8CgvVVmHGOWmofESj31msHo/1YiqcJWK7Wxfq2a4uvvtS01KAQyWK/CQ==}
+  /react-router@6.22.2(react@18.2.0):
+    resolution: {integrity: sha512-YD3Dzprzpcq+tBMHBS822tCjnWD3iIZbTeSXMY9LPSG541EfoBGyZ3bS25KEnaZjLcmQpw2AVLkFyfgXY8uvcw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
     dependencies:
-      '@remix-run/router': 1.15.1
+      '@remix-run/router': 1.15.2
       react: 18.2.0
     dev: false
 
