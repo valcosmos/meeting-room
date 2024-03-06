@@ -5,6 +5,9 @@ import { UpdateInfo } from "../pages/update_info/UpdateInfo";
 import { Login } from "../pages/Login/Login";
 import { Register } from "../pages/Register/Register";
 import { UpdatePassword } from "../pages/UpdatePassword/UpdatePassword";
+import { Menu } from "../pages/menu/Menu";
+import { MeetingRoomList } from "../pages/MeetingRoomList/MeetingRoomList";
+import { BookingHistory } from "../pages/BookingHistory/BookingHistory";
 
 export const routes: RouteObject[] = [
   {
@@ -17,8 +20,22 @@ export const routes: RouteObject[] = [
         element: <UpdateInfo />
       },
       {
-        path: 'bb',
-        element: <div>bb</div>
+        path: '/',
+        element: <Menu />,
+        children: [
+          {
+            path: '/',
+            element: <MeetingRoomList />
+          },
+          {
+            path: 'meeting_room_list',
+            element: <MeetingRoomList />
+          },
+          {
+            path: 'booking_history',
+            element: <BookingHistory />
+          }
+        ]
       }
     ]
   },
