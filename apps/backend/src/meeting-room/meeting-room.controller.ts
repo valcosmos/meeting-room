@@ -3,17 +3,20 @@ import {
   Get,
   Post,
   Body,
-  Patch,
   Param,
   Delete,
   Query,
   DefaultValuePipe,
   Put,
+  HttpStatus,
 } from '@nestjs/common';
 import { MeetingRoomService } from './meeting-room.service';
 import { CreateMeetingRoomDto } from './dto/create-meeting-room.dto';
 import { UpdateMeetingRoomDto } from './dto/update-meeting-room.dto';
 import { generateParseIntPipe } from 'src/utils';
+import { ApiBearerAuth, ApiBody, ApiParam, ApiResponse } from '@nestjs/swagger';
+import { RequireLogin } from 'src/custom.decorator';
+import { MeetingRoomVo } from './vo/meeting-room.vo';
 
 @Controller('meeting-room')
 export class MeetingRoomController {
@@ -57,6 +60,18 @@ export class MeetingRoomController {
     return this.meetingRoomService.findOne(+id);
   }
 
+  @ApiBearerAuth()
+  @ApiBody({
+    type: UpdateMeetingRoomDto,
+  })
+  @ApiResponse({
+    status: HttpStatus.BAD_REQUEST,
+    description: '会议室不存在',
+  })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: 'success',
+  })
   @Put('update')
   async update(@Body() meetingRoomDto: UpdateMeetingRoomDto) {
     return await this.meetingRoomService.update(meetingRoomDto);
@@ -67,11 +82,32 @@ export class MeetingRoomController {
     return this.meetingRoomService.remove(+id);
   }
 
+  @ApiBearerAuth()
+  @ApiParam({
+    name: 'id',
+    type: Number,
+  })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: 'success',
+    type: MeetingRoomVo,
+  })
   @Get(':id')
   async find(@Param('id') id: number) {
     return await this.meetingRoomService.findById(id);
   }
 
+  @ApiBearerAuth()
+  @ApiParam({
+    name: 'id',
+    type: Number,
+    description: 'id',
+  })
+  @ApiResponse({
+    status: HttpStatus.OK,
+    description: 'success',
+  })
+  @RequireLogin()
   @Delete(':id')
   async delete(@Param('id') id: number) {
     return await this.meetingRoomService.delete(id);
