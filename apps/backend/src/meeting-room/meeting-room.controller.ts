@@ -14,14 +14,50 @@ import { MeetingRoomService } from './meeting-room.service';
 import { CreateMeetingRoomDto } from './dto/create-meeting-room.dto';
 import { UpdateMeetingRoomDto } from './dto/update-meeting-room.dto';
 import { generateParseIntPipe } from 'src/utils';
-import { ApiBearerAuth, ApiBody, ApiParam, ApiResponse } from '@nestjs/swagger';
+import {
+  ApiBearerAuth,
+  ApiBody,
+  ApiParam,
+  ApiQuery,
+  ApiResponse,
+} from '@nestjs/swagger';
 import { RequireLogin } from 'src/custom.decorator';
 import { MeetingRoomVo } from './vo/meeting-room.vo';
+import { MeetingRoomListVo } from './vo/meeting-room-list.vo';
 
 @Controller('meeting-room')
 export class MeetingRoomController {
   constructor(private readonly meetingRoomService: MeetingRoomService) {}
 
+  @ApiBearerAuth()
+  @ApiQuery({
+    name: 'pageNo',
+    type: Number,
+    required: false,
+  })
+  @ApiQuery({
+    name: 'pageSize',
+    type: Number,
+    required: false,
+  })
+  @ApiQuery({
+    name: 'name',
+    type: String,
+    required: false,
+  })
+  @ApiQuery({
+    name: 'capacity',
+    type: String,
+    required: false,
+  })
+  @ApiQuery({
+    name: 'equipment',
+    type: String,
+    required: false,
+  })
+  @ApiResponse({
+    type: MeetingRoomListVo,
+  })
   @Get('list')
   async list(
     @Query('pageNo', new DefaultValuePipe(1), generateParseIntPipe('pageNo'))
