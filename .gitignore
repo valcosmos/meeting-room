@@ -176,3 +176,4 @@ yarn-error.log
 
 mysql-data
 redis-data
+.turbo/
