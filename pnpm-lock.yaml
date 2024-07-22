@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       turbo:
-        specifier: ^2.0.8
-        version: 2.0.8
+        specifier: ^2.0.9
+        version: 2.0.9
 
   apps/admin:
     dependencies:
@@ -18,8 +18,8 @@ importers:
         specifier: ^1.21.0
         version: 1.21.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@ant-design/icons':
-        specifier: ^5.3.7
-        version: 5.3.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^5.4.0
+        version: 5.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       antd:
         specifier: ^5.19.3
         version: 5.19.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -61,8 +61,8 @@ importers:
         specifier: ^4.6.2
         version: 4.6.2(eslint@9.7.0)
       eslint-plugin-react-refresh:
-        specifier: ^0.4.8
-        version: 0.4.8(eslint@9.7.0)
+        specifier: ^0.4.9
+        version: 0.4.9(eslint@9.7.0)
       postcss:
         specifier: ^8.4.39
         version: 8.4.39
@@ -206,8 +206,8 @@ importers:
         specifier: ^1.21.0
         version: 1.21.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@ant-design/icons':
-        specifier: ^5.3.7
-        version: 5.3.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^5.4.0
+        version: 5.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       antd:
         specifier: ^5.19.3
         version: 5.19.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -249,8 +249,8 @@ importers:
         specifier: ^4.6.2
         version: 4.6.2(eslint@9.7.0)
       eslint-plugin-react-refresh:
-        specifier: ^0.4.8
-        version: 0.4.8(eslint@9.7.0)
+        specifier: ^0.4.9
+        version: 0.4.9(eslint@9.7.0)
       postcss:
         specifier: ^8.4.39
         version: 8.4.39
@@ -308,8 +308,8 @@ packages:
   '@ant-design/icons-svg@4.4.2':
     resolution: {integrity: sha512-vHbT+zJEVzllwP+CM+ul7reTEfBR0vgxFe7+lREAsAA7YGsYpboiq2sQNeQeRvh09GfQgs/GyFEvZpJ9cLXpXA==}
 
-  '@ant-design/icons@5.3.7':
-    resolution: {integrity: sha512-bCPXTAg66f5bdccM4TT21SQBDO1Ek2gho9h3nO9DAKXJP4sq+5VBjrQMSxMVXSB3HyEz+cUbHQ5+6ogxCOpaew==}
+  '@ant-design/icons@5.4.0':
+    resolution: {integrity: sha512-QZbWC5xQYexCI5q4/fehSEkchJr5UGtvAJweT743qKUQQGs9IH2DehNLP49DJ3Ii9m9CijD2HN6fNy3WKhIFdA==}
     engines: {node: '>=8'}
     peerDependencies:
       react: '>=16.0.0'
@@ -2214,8 +2214,8 @@ packages:
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
 
-  eslint-plugin-react-refresh@0.4.8:
-    resolution: {integrity: sha512-MIKAclwaDFIiYtVBLzDdm16E+Ty4GwhB6wZlCAG1R3Ur+F9Qbo6PRxpA5DK7XtDgm+WlCoAY2WxAwqhmIDHg6Q==}
+  eslint-plugin-react-refresh@0.4.9:
+    resolution: {integrity: sha512-QK49YrBAo5CLNLseZ7sZgvgTy21E6NEw22eZqc4teZfH8pxV3yXc9XXOYfUI6JNpw7mfHNkAeWtBxrTyykB6HA==}
     peerDependencies:
       eslint: '>=7'
 
@@ -4261,38 +4261,38 @@ packages:
   tslib@2.6.3:
     resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
 
-  turbo-darwin-64@2.0.8:
-    resolution: {integrity: sha512-WxPAmpkJXTBfa2tmfLk1YI2eFc5vk8eOQS1gRA3bMfwDory1tKhdPGamDrVtMzMguCiWIvit5JU3x5SHJTLP9A==}
+  turbo-darwin-64@2.0.9:
+    resolution: {integrity: sha512-owlGsOaExuVGBUfrnJwjkL1BWlvefjSKczEAcpLx4BI7Oh6ttakOi+JyomkPkFlYElRpjbvlR2gP8WIn6M/+xQ==}
     cpu: [x64]
     os: [darwin]
 
-  turbo-darwin-arm64@2.0.8:
-    resolution: {integrity: sha512-sMPkU2GiW5OotJNPWmCWGuoltjRilmazXd6EfKK12eoq4rR1PGxUtvKY8LOLHIudDDcB4VUbxWSgHR/VBezhuw==}
+  turbo-darwin-arm64@2.0.9:
+    resolution: {integrity: sha512-XAXkKkePth5ZPPE/9G9tTnPQx0C8UTkGWmNGYkpmGgRr8NedW+HrPsi9N0HcjzzIH9A4TpNYvtiV+WcwdaEjKA==}
     cpu: [arm64]
     os: [darwin]
 
-  turbo-linux-64@2.0.8:
-    resolution: {integrity: sha512-5Uq3M36V1BBMbxdIoZHxzVdaSeJ2Uyp6lMj9L58iLX9wBPlrUY1f150Ys/PGOyTfyzL+wz2tqPqAsDSRSRhRIQ==}
+  turbo-linux-64@2.0.9:
+    resolution: {integrity: sha512-l9wSgEjrCFM1aG16zItBsZ206ZlhSSx1owB8Cgskfv0XyIXRGHRkluihiaxkp+UeU5WoEfz4EN5toc+ICA0q0w==}
     cpu: [x64]
     os: [linux]
 
-  turbo-linux-arm64@2.0.8:
-    resolution: {integrity: sha512-b5EPHMNbR34z8aEosGQDb4m22o8VuWW3Nr5z3jbl+PMBJByBvGl/A5oYZIQfcJhRD5Ih/H1tqi7ftbrwouC3tQ==}
+  turbo-linux-arm64@2.0.9:
+    resolution: {integrity: sha512-gRnjxXRne18B27SwxXMqL3fJu7jw/8kBrOBTBNRSmZZiG1Uu3nbnP7b4lgrA/bCku6C0Wligwqurvtpq6+nFHA==}
     cpu: [arm64]
     os: [linux]
 
-  turbo-windows-64@2.0.8:
-    resolution: {integrity: sha512-2CKNENrm+/PaQEXcLqz0rd8KzppV6bO7Dju89bniKFo684Ip8zpq1YkOxGrhRPSgIFHKXph0ZmSoErqyfXoi5Q==}
+  turbo-windows-64@2.0.9:
+    resolution: {integrity: sha512-ZVo0apxUvaRq4Vm1qhsfqKKhtRgReYlBVf9MQvVU1O9AoyydEQvLDO1ryqpXDZWpcHoFxHAQc9msjAMtE5K2lA==}
     cpu: [x64]
     os: [win32]
 
-  turbo-windows-arm64@2.0.8:
-    resolution: {integrity: sha512-10FZPqk2hzRo6pT3ze5DdfMS5beMMc6vYw61FSwoqoXefFFhPm/2IIuVpLFnhfuqroWtmb5ilQtHeNSYEXSv5Q==}
+  turbo-windows-arm64@2.0.9:
+    resolution: {integrity: sha512-sGRz7c5Pey6y7y9OKi8ypbWNuIRPF9y8xcMqL56OZifSUSo+X2EOsOleR9MKxQXVaqHPGOUKWsE6y8hxBi9pag==}
     cpu: [arm64]
     os: [win32]
 
-  turbo@2.0.8:
-    resolution: {integrity: sha512-4BHTlXy/Sjtcy5skq3OBTQdTSkxbBbRhrQzEiRBcrc6OuEWe0iAefoYqJR0+c7dqD79AYqE/EJsDwE9kSq0YSA==}
+  turbo@2.0.9:
+    resolution: {integrity: sha512-QaLaUL1CqblSKKPgLrFW3lZWkWG4pGBQNW+q1ScJB5v1D/nFWtsrD/yZljW/bdawg90ihi4/ftQJ3h6fz1FamA==}
     hasBin: true
 
   type-check@0.4.0:
@@ -4628,7 +4628,7 @@ snapshots:
 
   '@ant-design/icons-svg@4.4.2': {}
 
-  '@ant-design/icons@5.3.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@ant-design/icons@5.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@ant-design/colors': 7.1.0
       '@ant-design/icons-svg': 4.4.2
@@ -6040,7 +6040,7 @@ snapshots:
     dependencies:
       '@ant-design/colors': 7.1.0
       '@ant-design/cssinjs': 1.21.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@ant-design/icons': 5.3.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@ant-design/icons': 5.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@ant-design/react-slick': 1.1.2(react@18.3.1)
       '@babel/runtime': 7.24.8
       '@ctrl/tinycolor': 3.6.1
@@ -6696,7 +6696,7 @@ snapshots:
     dependencies:
       eslint: 9.7.0
 
-  eslint-plugin-react-refresh@0.4.8(eslint@9.7.0):
+  eslint-plugin-react-refresh@0.4.9(eslint@9.7.0):
     dependencies:
       eslint: 9.7.0
 
@@ -9073,32 +9073,32 @@ snapshots:
 
   tslib@2.6.3: {}
 
-  turbo-darwin-64@2.0.8:
+  turbo-darwin-64@2.0.9:
     optional: true
 
-  turbo-darwin-arm64@2.0.8:
+  turbo-darwin-arm64@2.0.9:
     optional: true
 
-  turbo-linux-64@2.0.8:
+  turbo-linux-64@2.0.9:
     optional: true
 
-  turbo-linux-arm64@2.0.8:
+  turbo-linux-arm64@2.0.9:
     optional: true
 
-  turbo-windows-64@2.0.8:
+  turbo-windows-64@2.0.9:
     optional: true
 
-  turbo-windows-arm64@2.0.8:
+  turbo-windows-arm64@2.0.9:
     optional: true
 
-  turbo@2.0.8:
+  turbo@2.0.9:
     optionalDependencies:
-      turbo-darwin-64: 2.0.8
-      turbo-darwin-arm64: 2.0.8
-      turbo-linux-64: 2.0.8
-      turbo-linux-arm64: 2.0.8
-      turbo-windows-64: 2.0.8
-      turbo-windows-arm64: 2.0.8
+      turbo-darwin-64: 2.0.9
+      turbo-darwin-arm64: 2.0.9
+      turbo-linux-64: 2.0.9
+      turbo-linux-arm64: 2.0.9
+      turbo-windows-64: 2.0.9
+      turbo-windows-arm64: 2.0.9
 
   type-check@0.4.0:
     dependencies:
