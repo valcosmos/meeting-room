@@ -50,9 +50,10 @@ import { Booking } from './booking/entities/booking.entity';
           entities: [User, Role, Permission, MeetingRoom, Booking],
           poolSize: 10,
           connectorPackage: 'mysql2',
-          extra: {
-            authPlugin: 'sha256_password',
-          },
+          authPlugin: 'sha256_password',
+          // extra: {
+            // authPlugin: 'sha256_password',
+          // },
         };
       },
       inject: [ConfigService],
